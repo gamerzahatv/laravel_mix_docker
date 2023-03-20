@@ -4,6 +4,7 @@ please remove file  db_here.txt in floder  data/db   (if not remove file docker 
 docker compose build
 docker compose up -d
 (fi you want to stop container )   : docker compose down
+app is docker name service in docker compose
 docker compose exec app composer create-project --prefer-dist laravel/laravel .
 docker compose exec app php artisan key:generate
 docker compose exec app php artisan storage:link
